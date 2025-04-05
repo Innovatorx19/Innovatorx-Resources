@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovatorX Resources</title>
+    <style>
+        
+        
+         /* Loading Animation Styling */
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* Transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loading-spinner {
+    border: 16px solid gray; /* White border */
+    border-top: 16px solid yellow; /* yellow color for top border */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 3s linear infinite;
+}
+
+/* Spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+    
+        
+        
+        
+         .menu {
+            display: flex;
+            justify-content: center;
+            background-color: #333; /* Dark background */
+            padding: 15px 0;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .menu ul li {
+            margin: 10px 20px;
+        }
+
+        .menu ul li a {            
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 20px;
+           // background-color: #FFCC00;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu ul li a:hover {
+            background-color: #FF9900;
+        }
+
+        /* Hidden Content */
+        .hidden-content {
+            display: none;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+
+  /* Close Button */
+        .close-btn {
+            padding: 8px 15px;
+            background-color: #FF6F61;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        /* Section Buttons */
+        .section-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .section-button {
+            background-color: #FFCC00;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 200px;
+            text-align: center;
+        }
+
+        .section-button:hover {
+            background-color: #FF9900;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .menu ul {
+                flex-direction: column;
+            }
+
+            .menu ul li a {
+                padding: 15px 30px;
+            }
+
+            .section-button {
+                width: 100%;
+            }
+        }
+
+
+
+ .sunna4u {
+    background-color: gray;
+    border-radius: 15px;
+    border: inset;
+    }
+
+
+ /* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    margin: 10px;
+}
+
+/* Footer Left */
+.footer-left p {
+    font-size: 14px;
+}
+
+/* Footer Center */
+.footer-center ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-center ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-center ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Privacy Link */
+.privacy-link {
+    color: #FFEB3B;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.privacy-link:hover {
+    color: #FF5722;
+}
+
+/* Footer Right */
+.footer-right p {
+    font-size: 16px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-icon {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #FFEB3B;
+} 
+
+
+
+        
+        div.resource{
+            background-color: #FFCC00;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            
+            
+        }
+        
+        
+        
+        
+        
+        
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background 0.3s, color 0.3s;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            background: linear-gradient(90deg, yellow, gray);
+            padding: 15px;
+            border-radius: 8px;
+            text-shadow: 2px 2px 5px black;
+        }
+        .resource {
+            background: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .resource:hover {
+            transform: scale(1.05);
+        }
+        .links {
+            display: none;
+            padding: 10px;
+        }
+        .links a {
+            display: block;
+            margin: 5px;
+            color: blue;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        /* Dark Mode */
+        .dark-mode {
+            background: black;
+            color: white;
+        }
+        .dark-mode .resource {
+            background: gray;
+            color: black;
+        }
+        /* Button */
+        .toggle-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: gray;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 20px;
+            z-index: 100;
+        }
+        .toggle-btn:hover {
+            background: black;
+        }
+         
+        
+        /* General styling for email and password input fields */
+.input-email, .input-password {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+}
+
+.input-email:focus, .input-password:focus {
+  border-color: #4CAF50;
+}
+
+/* Container for password field and eye icon */
+.password-container {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Submit button style */
+.btn-submit {
+  padding: 10px 20px;
+  background-color: #ffa815;
+  color: gray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.btn-submit:hover {
+  background-color: #ffa815;
+}
+
+/* Success message styling */
+.success-message {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: gray;
+  color: white;
+  font-size: 18px;
+  border-radius: 5rem;
+  text-align: center;
+}
+        
+        /* Modal background */
+.privacy-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Aligns modal to the top */
+    z-index: 1000;
+    display: none;
+    color: gray;
+      border: 0px solid #888
+}
+
+/* Content inside the modal */
+.privacy-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Space from the top */
+}
+
+/* Privacy Policy Titles */
+.privacy-content h2 {
+    color: #f1c40f;
+}
+
+/* List styling */
+.privacy-content ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.privacy-content li {
+    margin: 8px 0;
+}
+
+/* Buttons styling */
+.privacy-buttons {
+    margin-top: 20px;
+}
+
+.privacy-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #f1c40f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.privacy-buttons button:hover {
+    background-color: white;
+}
+        
+    </style>
+</head>
+<body>
+  
+ 
+  
+<div class="container">
+    <h1>InnovatorX Resources</h1>
+    <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+
+ <!-- Loading Animation -->
+<div id="loading" class="loading-container">
+    <div class="loading-spinner"></div>
+</div> 
+   
+
+<form id="email-form" action="#" method="POST">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" class="input-email" placeholder="Enter your email" required>
+
+  <label for="password">Password:</label>
+  <div class="password-container">
+    <input type="password" id="password" name="password" class="input-password" placeholder="Enter your password" required>
+    <span id="toggle-password" class="eye-icon">👁️</span>
+  </div>
+
+  <button type="submit" class="btn-submit">Submit</button>
+</form>
+
+<!-- Message box to show success -->
+<div id="success-message" class="success-message">
+  Email selected successfully!
+</div>
+
+
+
+
+    <div class="resource" onclick="toggleLinks('programming')">
+        
+        
+        
+        <h2>Programming Resources</h2>
+        <div id="programming" class="links">
+            <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+            <a href="https://developer.mozilla.org" target="_blank">MDN Docs</a>
+            <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a>
+        </div>
+        
+        
+        
+    </div>
+
+
+
+    <div class="resource" onclick="toggleLinks('education')">
+        
+        
+        <h2>Education Resources</h2>
+        <div id="education" class="links">
+            <a href="https://www.khanacademy.org"  target="_blank">Khan Academy</a>
+            <a href="https://www.coursera.org" target="_blank">Coursera</a>
+            <a href="https://www.edx.org" target="_blank">edX</a>
+        </div>
+        
+        
+        
+    </div>
+
+
+
+
+    <div class="resource" onclick="toggleLinks('religion')">        
+        <h2>Religious Resources</h2>
+        <div id="religion" class="links">           
+            <a href="https://quran.com" target="_blank">Quran.com</a>
+            <a href="https://www.sunna4u.com.ng/p/sunna4u.html?m=1 target="_blank">Sunna4u</a>
+            <a href="https://islamqa.info" target="_blank">Islam Q&A</a>
+        </div>
+    </div>
+
+
+
+
+    <div class="resource" onclick="toggleLinks('general')">
+        
+        
+        
+        <h2>General Knowledge Resources</h2>
+        <div id="general" class="links">
+            <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+            <a href="https://www.britannica.com" target="_blank">Britannica</a>
+            <a href="https://www.nationalgeographic.com" target="_blank">National Geographic</a>
+        </div>
+    </div>
+    
+    
+
+
+
+
+<div class="resource" onclick="toggleLinks('business')">
+
+        <h2>Business & Entrepreneurship Resources</h2>
+
+        <div id="business" class="links">  
+              
+       <a href="https://www.forbes.com" target="_blank">Forbes</a>
+        <a href="https://www.entrepreneur.com" target="_blank">Entrepreneur</a>
+        <a href="https://hbr.org" target="_blank">Harvard Business Review</a>
+        <a href="https://www.sba.gov" target="_blank">U.S. Small Business Administration</a>
+        <a href="https://www.businessinsider.com" target="_blank">Business Insider</a>
+        
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="resource" onclick="toggleLinks('techq')">
+<h2>Science & Technology Resources</h2>
+
+<div id="techq" class="links">
+
+
+<a href="https://www.nasa.gov" target="_blank">NASA</a>
+<a href="https://www.scientificamerican.com" target="_blank">Scientific American</a>
+<a href="https://www.nature.com" target="_blank">Nature</a>
+<a href="https://www.sciencemag.org" target="_blank">Science Magazine</a>
+<a href="https://www.techcrunch.com" target="_blank">TechCrunch</a>
+
+
+
+ </div>
+</div>
+
+
+<div class="resource" onclick="toggleLinks('health')">
+
+<h2>Health & Medicine Resources</h2>
+<div id="health" class="links">
+
+<a href="https://www.who.int" target="_blank">World Health Organization</a>
+<a href="https://www.mayoclinic.org" target="_blank">Mayo Clinic</a>
+<a href="https://www.webmd.com" target="_blank">WebMD</a>
+<a href="https://www.healthline.com" target="_blank">Healthline</a>
+<a href="https://www.nih.gov" target="_blank">National Institutes of Health</a>
+
+ </div>
+</div>
+
+
+
+<div class="resource" onclick="toggleLinks('financial')">
+
+<h2>Financial & Investment Resources</h2>
+
+<div id="financial" class="links">
+    
+<a href="https://www.investopedia.com" target="_blank">Investopedia</a>
+<a href="https://www.marketwatch.com" target="_blank">MarketWatch</a>
+<a href="https://www.fool.com" target="_blank">The Motley Fool</a>
+<a href="https://www.cnbc.com" target="_blank">CNBC</a>
+<a href="https://www.wsj.com" target="_blank">The Wall Street Journal</a>
+
+
+ </div>
+</div>
+
+
+<div class="resource" onclick="toggleLinks('graphics')">
+<h2>Graphic Design & Creativity Resources</h2>
+
+<div id="graphics" class="links">
+    
+<a href="https://www.behance.net" target="_blank">Behance</a>
+<a href="https://www.dribbble.com" target="_blank">Dribbble</a>
+<a href="https://www.canva.com" target="_blank">Canva</a>
+<a href="https://www.adobe.com" target="_blank">Adobe</a>
+<a href="https://www.pixabay.com" target="_blank">Pixabay</a>
+
+ </div>
+</div>
+
+<div class="resource" onclick="toggleLinks('aimachine')">
+<h2>AI & Machine Learning Resources</h2>
+
+<div id="aimachine" class="links">
+    
+<a href="https://www.tensorflow.org" target="_blank">TensorFlow</a>
+<a href="https://pytorch.org" target="_blank">PyTorch</a>
+<a href="https://www.kaggle.com" target="_blank">Kaggle</a>
+<a href="https://www.fast.ai" target="_blank">Fast.ai</a>
+<a href="https://machinelearningmastery.com" target="_blank">Machine Learning Mastery</a>
+
+
+ </div>
+</div>
+
+
+
+<div class="resource" onclick="toggleLinks('space')">
+
+<h2> Space & Astronomy Resources</h2>
+
+<div id="space" class="links">
+
+<a href="https://www.nasa.gov" target="_blank">NASA</a><br>
+<a href="https://www.space.com" target="_blank">Space.com</a><br>
+<a href="https://hubblesite.org" target="_blank">HubbleSite</a><br>
+<a href="https://www.esa.int" target="_blank">European Space Agency (ESA)</a><br>
+<a href="https://skyandtelescope.org" target="_blank">Sky & Telescope</a><br>
+
+</div>
+</div>
+
+<div class="resource" onclick="toggleLinks('language')">
+<h2> Language Learning Resources</h2>
+<div id="language" class="links">
+
+<a href="https://www.duolingo.com" target="_blank">Duolingo</a><br>
+<a href="https://www.bbc.co.uk/languages" target="_blank">BBC Languages</a><br>
+<a href="https://www.memrise.com" target="_blank">Memrise</a><br>
+<a href="https://www.fluentu.com" target="_blank">FluentU</a><br>
+<a href="https://www.rosettastone.com" target="_blank">Rosetta Stone</a><br>
+
+
+</div>
+</div>
+
+<div class="resource" onclick="toggleLinks('career')">
+<h2>Career & Job Search Resources</h2>
+
+
+<div id="career" class="links">
+<a href="https://www.linkedin.com" target="_blank">LinkedIn</a><br>
+<a href="https://www.indeed.com" target="_blank">Indeed</a><br>
+<a href="https://www.glassdoor.com" target="_blank">Glassdoor</a><br>
+<a href="https://www.monster.com" target="_blank">Monster</a><br>
+<a href="https://www.careerbuilder.com" target="_blank">CareerBuilder</a><br>
+
+
+</div>
+</div>
+
+<div class="resource" onclick="toggleLinks('environmental')">
+<h2> Environmental & Sustainability Resources</h2>
+
+<div id="environmental" class="links">
+<a href="https://www.unep.org" target="_blank">United Nations Environment Programme (UNEP)</a><br>
+<a href="https://www.nationalgeographic.com/environment" target="_blank">National Geographic - Environment</a><br>
+<a href="https://www.worldwildlife.org" target="_blank">World Wildlife Fund (WWF)</a><br>
+<a href="https://www.greenpeace.org" target="_blank">Greenpeace</a><br>
+<a href="https://www.epa.gov" target="_blank">EPA (Environmental Protection Agency)</a><br>
+
+
+</div>
+</div>
+
+
+
+<div class="resource" onclick="toggleLinks('selfim')">
+<h2>Psychology & Self-Improvement Resources</h2>
+
+<div id="selfim" class="links">
+<a href="https://www.psychologytoday.com" target="_blank">Psychology Today</a><br>
+<a href="https://www.verywellmind.com" target="_blank">Verywell Mind</a><br>
+<a href="https://www.mindtools.com" target="_blank">MindTools</a><br>
+<a href="https://positivepsychology.com" target="_blank">Positive Psychology</a><br>
+<a href="https://gretchenrubin.com/the-happiness-project" target="_blank">The Happiness Project</a><br>
+
+
+</div>
+</div>
+
+<div class="resource" onclick="toggleLinks('music')">
+<h2>Music & Arts Resources</h2>
+
+<div id="music" class="links">
+<a href="https://www.spotify.com" target="_blank">Spotify</a><br>
+<a href="https://www.soundcloud.com" target="_blank">SoundCloud</a><br>
+<a href="https://www.fender.com/play" target="_blank">Fender Play</a><br>
+<a href="https://musescore.org" target="_blank">MuseScore</a><br>
+<a href="https://www.artstation.com" target="_blank">ArtStation</a><br>
+</div>
+</div>
+
+
+
+
+<div class="resource" onclick="toggleLinks('machine')">
+
+<h2>Artificial Intelligence & Machine Learning Resources</h2>
+
+<div id="machine" class="links">
+<a href="https://www.tensorflow.org" target="_blank">TensorFlow</a>
+<a href="https://pytorch.org" target="_blank">PyTorch</a>
+<a href="https://www.kaggle.com" target="_blank">Kaggle</a>
+<a href="https://www.coursera.org/courses?query=machine%20learning" target="_blank">Coursera ML Courses</a>
+<a href="https://www.deeplearning.ai" target="_blank">DeepLearning.AI</a>
+</div>
+</div>
+ 
+<div class="resource" onclick="toggleLinks('history')">
+
+<h2>History & Culture Resources</h2>
+
+<div id="history" class="links">
+<a href="https://www.history.com" target="_blank">History.com</a>
+<a href="https://www.britannica.com" target="_blank">Britannica</a>
+<a href="https://www.archives.gov" target="_blank">National Archives</a>
+<a href="https://www.smithsonianmag.com" target="_blank">Smithsonian Magazine</a>
+<a href="https://www.ancient.eu" target="_blank">Ancient History Encyclopedia</a>
+
+
+</div>
+</div>
+ 
+<div class="resource" onclick="toggleLinks('ethical')">
+
+<h2>Cybersecurity & Ethical Hacking Resources</h2>
+
+<div id="ethical" class="links">
+<a href="https://www.kali.org" target="_blank">Kali Linux</a>
+<a href="https://www.cybrary.it" target="_blank">Cybrary</a>
+<a href="https://www.hackthebox.com" target="_blank">Hack The Box</a>
+<a href="https://owasp.org" target="_blank">OWASP</a>
+<a href="https://www.cisa.gov" target="_blank">Cybersecurity & Infrastructure Security Agency</a>
+
+</div>
+</div>
+
+
+
+ <!-- Hidden Content -->
+    <div id="about" class="hidden-content">
+        <h3>About Us</h3>
+        <p>InnovatorX is a leading platform in the field of islamic, technology, programming, and education.</p>
+        <button class="close-btn" onclick="hideContent('about')">OK</button>
+    </div>
+
+    <div id="terms" class="hidden-content">
+        <h3>Terms & Conditions</h3>
+        <p>By using our services, you agree to our terms and conditions.</p>
+        <button class="close-btn" onclick="hideContent('terms')">OK</button>
+    </div>
+
+    <div id="help" class="hidden-content">
+        <h3>Help</h3>
+        <p>If you need assistance, Please contact us</p>
+        <button class="close-btn" onclick="hideContent('help')">OK</button>
+    </div>
+
+    <div id="contact" class="hidden-content">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:innovatorx.19@gmail.com">innovatorx.19@gmail.com</a></p>
+        <button class="close-btn" onclick="hideContent('contact')">OK</button>
+    </div> 
+
+
+
+
+
+ <!-- Menu Section -->
+    <div class="menu">
+        <ul>
+            <li><a href="javascript:void(0)" onclick="showContent('about')">About</a></li>
+            <li><a href="javascript:void(0)" onclick="showContent('terms')">Terms</a></li>
+            <li><a href="javascript:void(0)" onclick="showContent('help')">Help</a></li>
+            <li><a href="javascript:void(0)" onclick="showContent('contact')">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <p>&copy; 2025 InnovatorX. All rights reserved.</p>
+        </div>
+        <div class="footer-center">
+            <ul>
+            
+        </div>
+        <div class="footer-right">
+            
+                      <a href=" https://www.sunna4u.com.ng/p/sunna4u.html?m=1">
+            <p class="sunna4u">Click here to visit sunna4u, For more islamic content</p></a>
+            
+            <p>Follow us on:</p>
+            <div class="social-links">
+         <a href="#" class="social-icon">FB</a>
+         
+         <a href="#" class="social-icon">TW</a>
+         
+         <a href="#" class="social-icon">IG</a>
+         
+         <a href="#" class="social-icon">LI</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="privacyPolicy" class="privacy-modal">
+    <div class="privacy-content">
+        <h2>Privacy Policy</h2>
+        <p>Welcome to InnovatorX! We respect your privacy and are committed to protecting your personal information. Please read our privacy policy carefully.</p>
+        
+        <h3>Information We Collect:</h3>
+        <ul>
+            <li>Personal details (name, email, etc.) when you register.</li>
+            <li>Non-personal data (cookies, usage data) to improve user experience.</li>
+        </ul>
+
+        <h3>How We Use Your Data:</h3>
+        <ul>
+            <li>To enhance user experience and provide customized content.</li>
+            <li>For communication and support purposes.</li>
+        </ul>
+
+        <h3>Your Privacy Rights:</h3>
+        <ul>
+            <li>You have the right to access, update, or delete your data.</li>
+            <li>You can opt-out of communications or request data deletion.</li>
+        </ul>
+
+        <p>By continuing to use our site, you agree to our privacy policy.</p>
+
+        <div class="privacy-buttons">
+            <button onclick="acceptPolicy()">Accept</button>
+            <button onclick="denyPolicy()">Deny</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+        // Hide the loading animation after 3 seconds
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        document.getElementById('loading').style.display = 'none';
+    }, 3000);  // 3000ms = 3 seconds
+});
+     
+    
+    
+    
+        function showContent(contentId) {
+            var contents = document.querySelectorAll('.hidden-content');
+            contents.forEach(function(content) {
+                content.style.display = 'none'; // Hide all content
+            });
+            document.getElementById(contentId).style.display = 'block'; // Show selected content
+        }
+
+        function hideContent(contentId) {
+            document.getElementById(contentId).style.display = 'none'; // Hide selected content
+        }
+
+    
+    
+    
+    
+    function hideContent(contentId) {
+            document.getElementById(contentId).style.display = 'none'; // Hide selected content
+        }
+    
+    
+    
+    function toggleLinks(id) {
+        let element = document.getElementById(id);
+        if (element.style.display === "block") {
+            element.style.display = "none";
+        } else {
+            element.style.display = "block";
+        }
+    }
+
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+    
+    
+    
+    
+      // JavaScript to toggle password visibility
+document.getElementById('toggle-password').addEventListener('click', function() {
+  const passwordField = document.getElementById('password');
+  const type = passwordField.type === 'password' ? 'text' : 'password';
+  passwordField.type = type;
+});
+
+// Show success message after email submission
+document.getElementById('email-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission for demonstration
+  const email = document.getElementById('email').value;
+  
+  // Check if email is valid
+  if (email) {
+    // Show success message
+    document.getElementById('success-message').style.display = 'block';
+
+    // Clear the form
+    document.getElementById('email').value = '';
+    document.getElementById('password').value = '';
+  }
+});
+        
+    
+    // Show success message on form submission
+    document.getElementById('email-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+        document.getElementById('success-message').style.display = 'block'; // Show the success message
+        setTimeout(function () {
+            document.getElementById('success-message').style.display = 'none'; // Hide after 3 seconds
+        }, 3000);
+    });
+
+    
+    
+    
+           
+      // Open Privacy Modal
+function openPrivacy() {
+    document.getElementById('privacyModal').style.display = 'block';
+}
+
+// Close Privacy Modal
+function closePrivacy() {
+    document.getElementById('privacyModal').style.display = 'none';
+} 
+        
+        
+        
+        
+        
+        // Show Privacy Policy modal
+window.onload = function() {
+    document.getElementById("privacyPolicy").style.display = "flex";
+}
+
+// Accept the privacy policy and close the modal
+function acceptPolicy() {
+    document.getElementById("privacyPolicy").style.display = "none";
+    document.body.style.overflow = "auto"; // Enable scrolling
+}
+
+// Deny the privacy policy and redirect
+function denyPolicy() {
+    window.location.href = "https://www.google.com"; // Redirect to another page if denied
+}        
+    
+    
+</script>
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+</body>
+</html>
